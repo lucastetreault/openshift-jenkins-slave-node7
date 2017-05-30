@@ -3,7 +3,7 @@ FROM openshift/jenkins-slave-base-centos7
 MAINTAINER Lucas Tetreault <lucastetreault@gmail.com>
 
 RUN yum upgrade -y
-RUN yum install -y gcc-c++ tar
+RUN yum install -y gcc-c++ tar make
 
 # Install Node.js 7.x repository
 RUN curl -sL https://rpm.nodesource.com/setup_7.x | bash -
