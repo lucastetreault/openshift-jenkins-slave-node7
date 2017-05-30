@@ -6,7 +6,7 @@ MAINTAINER Lucas Tetreault <lucastetreault@gmail.com>
 RUN curl -sL https://rpm.nodesource.com/setup_7.x | bash -
 
 # Install Node.js and npm
-RUN yum install nodejs
+RUN yum install nodejs -y
 
 RUN chown -R 1001:0 $HOME && \
     chmod -R g+rw $HOME
